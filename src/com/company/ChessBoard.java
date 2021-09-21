@@ -34,8 +34,8 @@ public class ChessBoard {
         }
     }
 
-    public void setCell(int Value, int j, int Y){
-        trueOrFalse[j][Y] = Value;
+    public void setCell(int Value, int X, int Y){
+        trueOrFalse[X][Y] = Value;
     }
 }
 /* Первый параметр trueOrFalse - сверху вниз Второй параметр - с лева на право.
