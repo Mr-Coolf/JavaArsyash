@@ -6,6 +6,7 @@ public class ChessFigures {
     int Y;
     boolean isAlive;
     String colour;
-    public cPoint [] possibleSteps() {
+    public int possibleSteps() {
+
     }
 }

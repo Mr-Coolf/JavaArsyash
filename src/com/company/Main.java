@@ -6,7 +6,7 @@ public class Main {
 	// write your code here
         ChessBoard myChessBoard = new ChessBoard();
         myChessBoard.clearBoard();
-        myChessBoard.setCell(12, 2, 4);
+        myChessBoard.setCell(7, 1, 3);
         System.out.println(myChessBoard.showChessBoard());
     }
 }
