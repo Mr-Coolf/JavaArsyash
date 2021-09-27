@@ -27,9 +27,7 @@ public class ChessBoard {
         trueOrFalse = new int[8][8];
         for (int secondcounter1 = 0; secondcounter1 < 8; secondcounter1++) {
             for (int secondcounter2 = 0; secondcounter2 < 8; secondcounter2++) {
-
-                trueOrFalse[secondcounter2][secondcounter1] = 0;
-                secondcounter2++;
+                trueOrFalse[secondcounter1][secondcounter2] = 0;
             }
         }
     }
@@ -38,7 +36,7 @@ public class ChessBoard {
         trueOrFalse[X][Y] = Value;
     }
 }
-/* Первый параметр trueOrFalse - сверху вниз Второй параметр - с лева на право.
+/* Первый параметр trueOrFalse - слева направо Второй параметр - сверху вниз.
                    counter
                    trueOrFalse [counter[0]] [counter[1]]
                    String Court = " |1|2|3|4|5|6|7|8| \n"

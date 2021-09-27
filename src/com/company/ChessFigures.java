@@ -6,7 +6,7 @@ public class ChessFigures {
     boolean isAlive;
     String colour;
     public boolean setPosition (int X, int Y) {
-        if ((X < 8 && X > 0) && (Y < 8 && Y > 0)) {
+        if ((X < 8 && X >= 0) && (Y < 8 && Y >= 0)) {
             position.X = X;
             position.Y = Y;
             return true;

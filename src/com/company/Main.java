@@ -4,11 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        /*ChessBoard myChessBoard = new ChessBoard();
-        myChessBoard.clearBoard();
-        myChessBoard.setCell(7, 1, 3);
-        System.out.println(myChessBoard.showChessBoard());*/
-        Math myMath = new Math();
-        System.out.println(myMath.factorial(7));
+        Player myPlayer = new Player();
+        myPlayer.testKnight(7, 7);
+        ChessKnight myChessKnight = new ChessKnight();
+        if (myChessKnight.testPossibleSteps()) System.out.println("Всё зашибись у коня");
+        else System.out.println("Конь долбанулся тришечки");
     }
 }
