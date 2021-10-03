@@ -79,7 +79,7 @@ public class ChessKnight extends ChessFigures{
             if (steps[i] != null )
                 stepsInString += steps[i].X + " " + steps[i].Y + " ";
         }
-        if (!stepsInString.equals("5 6 6 5 ")) return false;
+        if (!stepsInString.equals("5 6 6 5н ")) return false;
         return true;
     }
 }

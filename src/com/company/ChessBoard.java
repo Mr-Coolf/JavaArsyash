@@ -35,6 +35,11 @@ public class ChessBoard {
     public void setCell(int Value, int X, int Y){
         trueOrFalse[X][Y] = Value;
     }
+    public boolean checkCell (int X, int Y) {
+        if (trueOrFalse[X][Y] == 0){
+            return true;
+        } else return false;
+    }
 }
 /* Первый параметр trueOrFalse - слева направо Второй параметр - сверху вниз.
                    counter
