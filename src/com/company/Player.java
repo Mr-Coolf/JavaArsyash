@@ -27,22 +27,21 @@ public class Player {
 
         for (int i = 0; i < 60; i++) {
             possibleSteps = KnightMoves(pos.X, pos.Y);
-            if (possibleSteps[counterForPossibleSteps] == null) {
-                while (possibleSteps[counterForPossibleSteps] == null) {
-                    counterForPossibleSteps++;
-                }
-            }
-
-            if (myChessBoard.checkCell(possibleSteps[counterForPossibleSteps].X, possibleSteps[counterForPossibleSteps].Y) == true){
-                myChessBoard.setCell(counter, possibleSteps[counterForPossibleSteps].X, possibleSteps[counterForPossibleSteps].Y);
-                pos.X = possibleSteps[counterForPossibleSteps].X;
-                pos.Y = possibleSteps[counterForPossibleSteps].Y;
-                counter++;
-                System.out.println(myChessBoard.showChessBoard());
-                counterForPossibleSteps = 0;
-            } if (counterForPossibleSteps != 8){
+            while (counterForPossibleSteps < 8) {
+                if (possibleSteps[counterForPossibleSteps] != null)
+                    if (myChessBoard.checkCell(possibleSteps[counterForPossibleSteps].X, possibleSteps[counterForPossibleSteps].Y) == true){
+                        myChessBoard.setCell(counter, possibleSteps[counterForPossibleSteps].X, possibleSteps[counterForPossibleSteps].Y);
+                        pos.X = possibleSteps[counterForPossibleSteps].X;
+                        pos.Y = possibleSteps[counterForPossibleSteps].Y;
+                        counter++;
+                        System.out.println(myChessBoard.showChessBoard());
+                        counterForPossibleSteps = 0;
+                        break;
+                    }
                 counterForPossibleSteps++;
             }
+
+
 
         }
 
